@@ -1,12 +1,12 @@
 {
   "manifest_version": 2,
 
-  "name": "Python Chrome Plugin",
-  "description": "This extension runs Python code.",
+  "name": "Python Chrome Plugin for 12306",
+  "description": "This extension runs Python code to buy 12036 ticket.",
   "version": "1.0",
 
   "browser_action": {
-    "default_icon": "icon.png",
+    "default_icon": "th.jpg",
     "default_popup": "popup.html"
   },
   "permissions": [
