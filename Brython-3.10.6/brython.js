@@ -15882,3 +15882,6 @@ PyObject_Free(future);
 _PyArena_Free(arena);
 return st;}})(__BRYTHON__)
 ;
+document.addEventListener('DOMContentLoaded',function(){
+    brython();
+});
