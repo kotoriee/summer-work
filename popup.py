@@ -1,5 +1,5 @@
-from browser import document,console,alert
+from browser import document,console,alert,html
+def check_ticket(e):
+     alert("尚未实现")
 
-def show(e):
-    alert('尚未实现')
-document['checkticket'].bind('click',show)
+document['checkticket'].bind('click',check_ticket)

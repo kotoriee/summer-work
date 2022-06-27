@@ -11,17 +11,41 @@
     left: 50px;
 }
 body {
-    font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
-    font-size: 100%;
-}
-#status {
-    /* avoid an excessively wide status text */
-    white-space: pre;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    max-width: 400px;
+   width:400px;
+   height:300px;
 }
 #show_title{
-    font: weight 5px;;
+    font:weight 8px;
     font-size: 25px;
+}
+#checkresult{
+
+
+}
+#check{
+
+
+
+
+}
+.train{
+
+}
+.from_station{
+
+}
+.to_station{
+
+}
+.from_time{
+
+}
+.to_time{
+
+}
+.time{
+
+}
+.buy_button{
+
 }

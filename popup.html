@@ -13,8 +13,9 @@
     <script src="Brython-3.10.6/brython_stdlib.js"></script>
     <script src="popup.py" type="text/python"></script>  
 </head>
-<body>
-    <div><span id="show_title">12306抢票助手</span></div>
+<body id="main">
+    <div id="check">
+        <div><span id="show_title">12306抢票助手</span></div>
     <br>
     <div>起始站点：<input type="text" id="fromstate"></div>
     <div>目的站点：<input type="text" id="tostate"></div>
@@ -22,5 +23,125 @@
         <input type="radio" class="identity" value="adult"> 成人</div>
     <div>出发日期<input type="date" id="leavedate"></div>
     <button id="checkticket">查询</button>
+
+    </div>
+    <div id="checkresult">
+        <h3>查询结果</h3>
+    <table >
+    <tr>
+        <td>车次</td>
+        <td>出发站</td>
+        <td>到达站</td>
+        <td>出发时间</td>
+        <td>到达时间</td>
+        <td>历时</td>
+        <td>是否有座</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><span class="train" id="train_1">K528</span></td>
+        <td><span class="from_station" id="from_station1">杭州南</span></td>
+        <td><span class="to_station" id="to_station1">上海南</span></td>
+        <td><span class="from_time" id="from_time1">02:03</span></td>
+        <td><span class="to_time" id="to_time1">04:06</span></td>
+        <td><span class="time" id="time1">02:03</span></td>
+        <td><span class="have_ticket" id="have_ticket1">有</span></td>
+        <td><button class="buy_button" id="buy_button1">预定</button></td>
+    </tr>
+    <tr>
+        <td><span class="train" id="train_2">K528</span></td>
+        <td><span class="from_station" id="from_station2">杭州南</span></td>
+        <td><span class="to_station" id="to_station2">上海南</span></td>
+        <td><span class="from_time" id="from_time2">02:03</span></td>
+        <td><span class="to_time" id="to_time2">04:06</span></td>
+        <td><span class="time" id="time2">02:03</span></td>
+        <td><span class="have_ticket" id="have_ticket2">有</span></td>
+        <td><button class="buy_button" id="buy_button2">预定</button></td>
+    </tr>
+    <tr>
+        <td><span class="train" id="train_3">K528</span></td>
+        <td><span class="from_station" id="from_station3">杭州南</span></td>
+        <td><span class="to_station" id="to_station3">上海南</span></td>
+        <td><span class="from_time" id="from_time3">02:03</span></td>
+        <td><span class="to_time" id="to_time3">04:06</span></td>
+        <td><span class="time" id="time3">02:03</span></td>
+        <td><span class="have_ticket" id="have_ticket3">有</span></td>
+        <td><button class="buy_button" id="buy_button3">预定</button></td>
+    </tr>
+     <tr>
+        <td><span class="train" id="train_4">K528</span></td>
+        <td><span class="from_station" id="from_station4">杭州南</span></td>
+        <td><span class="to_station" id="to_station4">上海南</span></td>
+        <td><span class="from_time" id="from_time4">02:03</span></td>
+        <td><span class="to_time" id="to_time4">04:06</span></td>
+        <td><span class="time" id="time4">02:03</span></td>
+        <td><span class="have_ticket" id="have_ticket4">有</span></td>
+        <td><button class="buy_button" id="buy_button4">预定</button></td>
+    </tr>
+     <tr>
+        <td><span class="train" id="train_5">K528</span></td>
+        <td><span class="from_station" id="from_station5">杭州南</span></td>
+        <td><span class="to_station" id="to_station5">上海南</span></td>
+        <td><span class="from_time" id="from_time5">02:03</span></td>
+        <td><span class="to_time" id="to_time5">04:06</span></td>
+        <td><span class="time" id="time5">02:03</span></td>
+        <td><span class="have_ticket" id="have_ticket5">有</span></td>
+        <td><button class="buy_button" id="buy_button5">预定</button></td>
+    </tr>
+     <tr>
+        <td><span class="train" id="train_6">K528</span></td>
+        <td><span class="from_station" id="from_station6">杭州南</span></td>
+        <td><span class="to_station" id="to_station6">上海南</span></td>
+        <td><span class="from_time" id="from_time6">02:03</span></td>
+        <td><span class="to_time" id="to_time6">04:06</span></td>
+        <td><span class="time" id="time6">02:03</span></td>
+        <td><span class="have_ticket" id="have_ticket6">有</span></td>
+        <td><button class="buy_button" id="buy_button6">预定</button></td>
+    </tr>
+     <tr>
+        <td><span class="train" id="train_7">K528</span></td>
+        <td><span class="from_station" id="from_station7">杭州南</span></td>
+        <td><span class="to_station" id="to_station7">上海南</span></td>
+        <td><span class="from_time" id="from_time7">02:03</span></td>
+        <td><span class="to_time" id="to_time7">04:06</span></td>
+        <td><span class="time" id="time7">02:03</span></td>
+        <td><span class="have_ticket" id="have_ticket7">有</span></td>
+        <td><button class="buy_button" id="buy_button7">预定</button></td>
+    </tr>
+     <tr>
+        <td><span class="train" id="train_8">K528</span></td>
+        <td><span class="from_station" id="from_station8">杭州南</span></td>
+        <td><span class="to_station" id="to_station8">上海南</span></td>
+        <td><span class="from_time" id="from_time8">02:03</span></td>
+        <td><span class="to_time" id="to_time8">04:06</span></td>
+        <td><span class="time" id="time8">02:03</span></td>
+        <td><span class="have_ticket" id="have_ticket8">有</span></td>
+        <td><button class="buy_button" id="buy_button8">预定</button></td>
+    </tr>
+     <tr>
+        <td><span class="train" id="train_9">K528</span></td>
+        <td><span class="from_station" id="from_station9">杭州南</span></td>
+        <td><span class="to_station" id="to_station9">上海南</span></td>
+        <td><span class="from_time" id="from_time9">02:03</span></td>
+        <td><span class="to_time" id="to_time9">04:06</span></td>
+        <td><span class="time" id="time9">02:03</span></td>
+        <td><span class="have_ticket" id="have_ticket9">有</span></td>
+        <td><button class="buy_button" id="buy_button9">预定</button></td>
+    </tr>
+     <tr>
+        <td><span class="train" id="train_10">K528</span></td>
+        <td><span class="from_station" id="from_station10">杭州南</span></td>
+        <td><span class="to_station" id="to_station10">上海南</span></td>
+        <td><span class="from_time" id="from_time10">02:03</span></td>
+        <td><span class="to_time" id="to_time10">04:06</span></td>
+        <td><span class="time" id="time10">02:03</span></td>
+        <td><span class="have_ticket" id="have_ticket10">有</span></td>
+        <td><button class="buy_button" id="buy_button10">预定</button></td>
+    </tr>
+
+</table>
+
+    </div>
+
 </body>
 </html>
