@@ -11,22 +11,22 @@
     <link rel="stylesheet" href="popup.css">
     <script src="Brython-3.10.6/brython.js"></script>
     <script src="Brython-3.10.6/brython_stdlib.js"></script>
-    <script src="popup.py" type="text/python"></script>  
+    <script src="popup.py" type="text/python"></script>
+
 </head>
 <body id="main">
     <div id="check">
         <div><span id="show_title">12306抢票助手</span></div>
     <br>
-    <div>起始站点：<input type="text" id="fromstate"></div>
-    <div>目的站点：<input type="text" id="tostate"></div>
-    <div>身份：<input type="radio" class="identity" value="student"> 学生
+    <div class="checkUI">起始站点：<input type="text" id="fromstate"></div>
+    <div class="checkUI">目的站点：<input type="text" id="tostate"></div>
+    <div class="checkUI">身份：<input type="radio" class="identity" value="student"> 学生
         <input type="radio" class="identity" value="adult"> 成人</div>
-    <div>出发日期<input type="date" id="leavedate"></div>
+    <div class="checkUI">出发日期:<input type="date" id="leavedate"></div>
     <button id="checkticket">查询</button>
-
     </div>
     <div id="checkresult">
-        <h3>查询结果</h3>
+        <div><span id="resulttitle">查询结果</span><button id="return_check">返回查询</button></div>
     <table >
     <tr>
         <td>车次</td>
@@ -88,17 +88,20 @@
         <td><span class="have_ticket" id="have_ticket5">有</span></td>
         <td><button class="buy_button" id="buy_button5">预定</button></td>
     </tr>
-     <tr>
+    </table>
+    <button  id="showmore">显示更多</button>
+    <table id="morepart">
+     <tr class="morepart" id="morepart1">
         <td><span class="train" id="train_6">K528</span></td>
         <td><span class="from_station" id="from_station6">杭州南</span></td>
         <td><span class="to_station" id="to_station6">上海南</span></td>
-        <td><span class="from_time" id="from_time6">02:03</span></td>
-        <td><span class="to_time" id="to_time6">04:06</span></td>
+        <td><span class="from_time" id="from_time6">02:03</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td><span class="to_time" id="to_time6">04:06</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
         <td><span class="time" id="time6">02:03</span></td>
-        <td><span class="have_ticket" id="have_ticket6">有</span></td>
+        <td><span class="have_ticket" id="have_ticket6">有</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
         <td><button class="buy_button" id="buy_button6">预定</button></td>
     </tr>
-     <tr>
+     <tr class="morepart" id="morepart2">
         <td><span class="train" id="train_7">K528</span></td>
         <td><span class="from_station" id="from_station7">杭州南</span></td>
         <td><span class="to_station" id="to_station7">上海南</span></td>
@@ -108,7 +111,7 @@
         <td><span class="have_ticket" id="have_ticket7">有</span></td>
         <td><button class="buy_button" id="buy_button7">预定</button></td>
     </tr>
-     <tr>
+     <tr class="morepart" id="morepart3">
         <td><span class="train" id="train_8">K528</span></td>
         <td><span class="from_station" id="from_station8">杭州南</span></td>
         <td><span class="to_station" id="to_station8">上海南</span></td>
@@ -118,7 +121,7 @@
         <td><span class="have_ticket" id="have_ticket8">有</span></td>
         <td><button class="buy_button" id="buy_button8">预定</button></td>
     </tr>
-     <tr>
+     <tr class="morepart" id="morepart4">
         <td><span class="train" id="train_9">K528</span></td>
         <td><span class="from_station" id="from_station9">杭州南</span></td>
         <td><span class="to_station" id="to_station9">上海南</span></td>
@@ -128,7 +131,7 @@
         <td><span class="have_ticket" id="have_ticket9">有</span></td>
         <td><button class="buy_button" id="buy_button9">预定</button></td>
     </tr>
-     <tr>
+     <tr class="morepart" id="morepart5">
         <td><span class="train" id="train_10">K528</span></td>
         <td><span class="from_station" id="from_station10">杭州南</span></td>
         <td><span class="to_station" id="to_station10">上海南</span></td>
@@ -138,10 +141,8 @@
         <td><span class="have_ticket" id="have_ticket10">有</span></td>
         <td><button class="buy_button" id="buy_button10">预定</button></td>
     </tr>
-
-</table>
-
+    </table>
     </div>
-
+<script type="text/javascript" src="popup.js"></script>
 </body>
 </html>

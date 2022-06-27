@@ -8,19 +8,34 @@
     padding: 10px 20px;
     margin: 20px 0;
     position: relative;
-    left: 50px;
+    left: 170px;
 }
 body {
    width:400px;
-   height:300px;
+   height:200px;
 }
 #show_title{
-    font:weight 8px;
     font-size: 25px;
+    position: relative;
+    left: 110px;
+}
+.checkUI{
+    position: relative;
+    left: 80px;
 }
 #checkresult{
+    display: none;
 
 
+}
+#resulttitle{
+    position: relative;
+    left: 170px;
+
+}
+#return_check{
+    position: relative;
+    left: 250px;
 }
 #check{
 
@@ -29,23 +44,40 @@ body {
 
 }
 .train{
+    color: darkorange;
 
 }
 .from_station{
+   color: darkgreen;
 
 }
 .to_station{
+    color: darkblue;
 
 }
 .from_time{
+    color: darkgreen;
 
 }
 .to_time{
+    color: darkblue;
 
 }
 .time{
+    color: blueviolet;
 
 }
-.buy_button{
-
+.buy_button{background: black;
+    color: white;
+    cursor: pointer;
+    display: block;
+    border: 0;
+    border-radius: 3px;
+}
+#showmore{
+    position: relative;
+    left: 150px;
+}
+#morepart{
+    display: none;
 }
