@@ -18,12 +18,14 @@
     <div id="check">
         <div><span id="show_title">12306抢票助手</span></div>
     <br>
-    <div class="checkUI">起始站点：<input type="text" id="fromstate"></div>
-    <div class="checkUI">目的站点：<input type="text" id="tostate"></div>
-    <div class="checkUI">身份：<input type="radio" class="identity" value="student"> 学生
-        <input type="radio" class="identity" value="adult"> 成人</div>
-    <div class="checkUI">出发日期:<input type="date" id="leavedate"></div>
-    <button id="checkticket">查询</button>
+        <form action="http://localhost:8080/index/" method="post">
+    <div class="checkUI">起始站点：<input type="text" name="fromstate" id="fromstate"></div>
+    <div class="checkUI">目的站点：<input type="text" name="tostate" id="tostate"></div>
+    <div class="checkUI">身份：<input type="text" name="identity" id="identity"></div>
+    <div class="checkUI">出发日期:<input type="date" name="date" id="leavedate"></div>
+    <input id="checkticket" type="submit" value="查询">
+<!--    <button id="checkticket">查询</button>-->
+        </form>
     </div>
     <div id="checkresult">
         <div><span id="resulttitle">查询结果</span><button id="return_check">返回查询</button></div>
@@ -142,6 +144,7 @@
         <td><button class="buy_button" id="buy_button10">预定</button></td>
     </tr>
     </table>
+        <div>购票人：<input id="ticket_person" type="text"></div>
     </div>
 <script type="text/javascript" src="popup.js"></script>
 </body>
