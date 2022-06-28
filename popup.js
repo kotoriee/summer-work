@@ -124,12 +124,6 @@ var buy_ticket={
     time:"" ,
     ticket_person:""
 }
-document.getElementById("buy_button1").addEventListener("click", buy_ticket1);
-function buy_ticket1() {
-    buy_ticket()
-
-
-}
 function buy_ticket(e){
     buy_ticket.train=e.train
     buy_ticket.fromstate=e.fromstate
@@ -137,6 +131,47 @@ function buy_ticket(e){
     buy_ticket.time=document.getElementById("leavedate").value
     buy_ticket.ticket_person=document.getElementById("ticket_person").value
 }
+document.getElementById("buy_button1").addEventListener("click", buy_ticket1);
+function buy_ticket1() {
+    buy_ticket(show_ticket1)
+}
+document.getElementById("buy_button2").addEventListener("click", buy_ticket2);
+function buy_ticket2() {
+    buy_ticket(show_ticket2)
+}
+document.getElementById("buy_button3").addEventListener("click", buy_ticket3);
+function buy_ticket3() {
+    buy_ticket(show_ticket3)
+}
+document.getElementById("buy_button4").addEventListener("click", buy_ticket4);
+function buy_ticket4() {
+    buy_ticket(show_ticket4)
+}
+document.getElementById("buy_button5").addEventListener("click", buy_ticket5);
+function buy_ticket5() {
+    buy_ticket(show_ticket5)
+}
+document.getElementById("buy_button6").addEventListener("click", buy_ticket6);
+function buy_ticket6() {
+    buy_ticket(show_ticket6)
+}
+document.getElementById("buy_button7").addEventListener("click", buy_ticket7);
+function buy_ticket7() {
+    buy_ticket(show_ticket7)
+}
+document.getElementById("buy_button8").addEventListener("click", buy_ticket8);
+function buy_ticket8() {
+    buy_ticket(show_ticket8)
+}
+document.getElementById("buy_button9").addEventListener("click", buy_ticket9);
+function buy_ticket9() {
+    buy_ticket(show_ticket9)
+}
+document.getElementById("buy_button10").addEventListener("click", buy_ticket10);
+function buy_ticket10() {
+    buy_ticket(show_ticket10)
+}
+
 function showticket1(){
     document.getElementById("train_1").textContent=show_ticket1.train
     document.getElementById("from_station1").textContent=show_ticket1.fromstate
